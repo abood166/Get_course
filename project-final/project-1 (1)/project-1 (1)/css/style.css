@@ -1,0 +1,355 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background: red;
+    color: #fff;
+}
+
+/* start header */
+header {
+    background-image: url(../img/the-town-bg-01.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+header .navbar {
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 230px;
+}
+
+header .navbar .logo {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header .navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+header .navbar ul li {
+    padding-left: 50px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+header .navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 1s ease-in-out;
+}
+
+header .navbar ul li .active {
+    color: blue;
+}
+
+header .navbar ul li a:hover {
+    color: blue;
+}
+
+header .town {
+    position: absolute;
+    left: 43%;
+    top: 20%;
+    color: #fff;
+}
+
+header .town h1 {
+    font-size: 50px;
+    font-weight: 800;
+    font-family: 'PT Sans', sans-serif;
+    padding-bottom: 10px;
+    text-align: center;
+    text-shadow: 2px 2px 5px #000;
+    letter-spacing: 2;
+}
+
+header .town .par1 {
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+header .town .par2 {
+    font-size: 20px;
+    text-align: center;
+}
+
+/* end header */
+/* start section-1 */
+.introduction {
+    padding: 100px 0 100px 200px;
+}
+
+.introduction img {
+    width: 100%;
+}
+
+.introduction .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.introduction .text {
+    padding-left: 100px;
+    padding-right: 50px;
+    width: 70%;
+}
+
+.introduction .text h2 {
+    color: #1eb9ff;
+    font-size: 35px;
+}
+
+.introduction .text p {
+    text-align: justify;
+    color: #929292;
+    font-size: 20px;
+    padding-top: 25px;
+    width: 70%;
+    line-height: 1.4;
+}
+
+.introduction .text .par1 {
+    margin-bottom: -5px;
+}
+
+.introduction .text .par1 span {
+    font-weight: 700;
+}
+
+.introduction .text p a {
+    text-decoration: none;
+    color: #1eb9ff;
+    font-weight: 700;
+}
+
+.introduction .text button {
+    margin-top: 30px;
+    background: #1eb9ff;
+    padding: 10px 30px;
+    border: 2px solid #1eb9ff;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all .5s ease-in-out;
+}
+
+.introduction .text button:hover {
+    color: #1eb9ff;
+    background: none;
+}
+
+/* end section-1 */
+/* start section-2 */
+.noto {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 150px;
+}
+
+.write {
+    position: relative;
+}
+
+.write h3 {
+    font-size: 36px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: #53535394;
+    font-weight: 400;
+}
+
+.noto .write .a {
+    text-align: center;
+    position: absolute;
+    text-decoration: none;
+    padding-left: 25%;
+    padding-top: 10px;
+    color: #1eb9ff;
+    font-size: 17px;
+}
+
+.write p {
+    font-size: 19px;
+    padding: 50px 35px 0px;
+    color: #0808089e;
+    letter-spacing: 1.1;
+}
+/* start section-3 */
+h1 {
+    text-align: center;
+    font-size: 40px;
+    padding-top: 120px;
+    padding-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+.hed p {
+    text-align: center;
+    width: 57%;
+    margin: auto;
+    font-size: 20px;
+    line-height: 1.9;
+    color: #0808089e;
+}
+.mono {
+    display: flex;
+    justify-content: space-around;
+}
+.mono img {
+    width: 200px;
+    margin: 5px;
+}
+.hed h1 {
+    text-align: center;
+    font-size: 50px;
+    padding-top: 120px;
+    padding-bottom: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    color: #1eb9ff;
+}
+.cont pre {
+    text-align: center;
+    font-size: 15px;
+}
+.mono {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-left: 230px;
+    margin-right: 230px;
+    margin-top: 60px;
+}
+.mono img {
+    width: 180px;
+    margin: 5px;
+}
+/* end section-3 */
+/* start footer */
+.contact{
+    background-image: url(../img/the-town-bg-02.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center ;
+    width: 100%;
+    height: 100vh;
+    margin-top: 100px;
+}
+.contact h2{
+    margin: 90px 300px 20px;
+    font-size: 40px;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    padding-top: 90px;
+    padding-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    position: relative;
+}
+.contact h2::before{
+    content: '';
+    position: absolute;
+    height: 7px;
+    width: 23%;
+    background: #fff;
+    left: 0;
+    top: 158px;
+}
+.contact .container p{
+    color: #fff;
+    padding: 30px 300px 20px 300px;
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.7;
+}
+.contact .container .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px 600px 20px 300px;
+    color: #fff;
+    font-size: 18px;
+}
+.contact .container .row .phone span,
+.contact .container .row .email span{
+    padding-left: 5px;
+}
+.contact .container .location{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px 430px 20px 300px;
+    color: #fff;
+    font-size: 18px;
+}
+.contact .container .location div{
+    padding-top: 15px;
+}
+.contact .container .location div span{
+    padding-left: 5px;
+}
+.contact .container .location form{
+    margin-right: 100px;
+    position: relative;
+}
+.contact .container .location form .text{
+    background: none;
+    outline: none;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 10px 15px;
+    width: 100%;
+    font-size: 17px;
+    border-radius: 4px;
+}
+.contact .container .location form .submit{
+    background: #fff;
+    color: #111;
+    border: 2px solid #fff;
+    font-size: 17px;
+    font-weight: 400;
+    padding: 8px 15px;
+    border-radius: 4px;
+    margin-left: 10px;
+    position: absolute;
+    top: 0px;
+    transition: all .5s ease-in-out;
+}
+.contact .container .location form .submit:hover{
+    color: #fff;
+    background: none;
+}
+.contact .container .par2{
+    padding-top: 9%;
+    text-align: center;
+    font-size: 18px;
+}
+/* .contact  */
+/* end footer */

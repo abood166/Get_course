@@ -1,0 +1,493 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+::selection{
+    background-color: #fff;
+    color: rgb(32, 32, 212);
+}
+html{
+    scroll-behavior: smooth;
+}
+/* start navbar */
+.navbar{
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.4s ease;
+}
+.navbar.sticky{
+    background-color: crimson;
+}
+.navbar .logo{
+    font-size: 35px;
+    font-weight: 600;
+    color: #fff;
+}
+.navbar .logo span{
+    color: crimson;
+}
+.navbar.sticky .logo span{
+    color: #fff;
+    transition: all 0.4s ease;
+}
+.navbar .menu li a{
+    color: #fff;
+    margin-left: 20px;
+    transition: color 0.4s ease;
+}
+.navbar .menu li a:hover{
+    color: crimson;
+}
+.navbar.sticky .menu li a:hover{
+    color: #c0c0c0;
+}
+.navbar .navbar-toggler{
+    background-color: #fff;
+    cursor: pointer;
+    z-index: 999;
+}
+/* end navbar */
+/* start home section */
+.home{
+    display: flex;
+    background: url(../img/black-clothing-background-2.jpg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    min-height: 500px;
+}
+.home .container{
+    margin: auto 0 auto 0; 
+}
+.home .home-content .text-1{
+    font-size: 27px;
+    margin-left: 70px
+}
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: 70px; 
+}
+.home .home-content .text-3{
+    font-size: 27px;
+    margin: 5px 70px;
+}
+.home .home-content .text-3 span{
+    color: crimson;
+    font-weight: 600;
+}
+.home .home-content a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    margin-left: 70px;
+    border: 2px solid crimson;
+    border-radius: 6px;
+    transition: all 0.4s ease;
+}
+.home .home-content a:hover{
+    color: crimson;
+    background: none;
+    text-decoration: none;
+}
+/* end home section */
+/* all simialr code */
+section{
+    padding: 100px 0;
+}
+.about, .services, .skills, .contact, footer{
+    font-family: 'Poppins', sans-serif;
+}
+section .title{
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+}
+section .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+section .title::after{
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+/* start section about */
+.about .about-content img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.about .title::after{
+    content: "who i am";
+}
+.about .info h3{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
+.about .container .info p{
+    text-align: justify;
+}
+.about .info h3 span{
+    color: crimson;
+}
+.about .info a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.4s ease;
+}
+.about .info a:hover{
+    color: crimson;
+    background: none;
+    text-decoration: none;
+}
+
+/* end section about */
+/* start section services */
+.services{
+    background: #111;
+    color: #fff;
+}
+.services .title::before{
+    background: #fff;
+}
+.services .title::after{
+    content: "what i provide";
+    background: #111;
+}
+.services .container .card{
+    background: #222;
+    text-align: center;
+    border-radius: 20px 25px;
+    cursor: pointer;
+    margin: 0px 40px 15px;
+}
+.services .container .card .box{
+    transition: all 0.4s ease;
+}
+.services .container .card:hover{
+    background: crimson;
+}
+.services .container .card:hover{
+    transform: scale(1.10);
+}
+.services .container .card i{
+    font-size: 50px;
+    color: crimson;
+    margin-top: 15px;
+    transition: color 0.4s ease;
+}
+.services .container .card:hover i{
+    color: #fff;
+}
+.services .container .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 15px 0 7px 0;
+}
+/* End section services */
+/* Start section skills */
+.skills .title::after{
+    content: "what i know";
+}
+.skills .container .left .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.skills .container .left p{
+    text-align: justify;
+}
+.skills .container .left a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 18px;
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.4s ease;
+}
+.skills .container .left a:hover{
+    color: crimson;
+    background: none;
+    text-decoration: none;
+}
+.skills .container .right .bars{
+    margin-bottom: 15px;
+}
+.skills .container .right .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .container .right span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.skills .container .right .line{
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+.skills .container .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: crimson;
+}
+.skills .container .right .html::before{
+    width: 90%;
+}
+.skills .container .right .css::before{
+    width: 80%;
+}
+.skills .container .right .javascript::before{
+    width: 70%;
+}
+.skills .container .right .bootstrap::before{
+    width: 85%;
+}
+.skills .container .right .php::before{
+    width: 50%;
+}
+/* End section skills */
+/* start section contect */
+.contact{
+    background: #111;
+    color: #fff;
+}
+.contact .title::before{
+    background: #fff;
+}
+.contact .title::after{
+    content: "get in touch";
+    background: #111;
+}
+.contact .container .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.contact .container .left p{
+    text-align: justify;
+}
+.contact .container .left .icons{
+    margin: 10px 0;
+}
+.contact .container .div{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+.contact .container .div .info{
+    margin-left: 30px;
+}
+.contact .container .div i{
+    font-size: 25px;
+    color: crimson;
+}
+.contact .container .info .head{
+    font-weight: 500;
+}
+.contact .container .info .sub-title{
+    color: #555;
+}
+.contact .container .right form .fields{
+    display: flex;
+}
+.contact .container .right form .field,
+.contact .container .right form .fields .field{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.contact .container .right form .name{
+    margin-right: 10px;
+}
+.contact .container .right form .field input,
+.contact .container .right form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    background: #111;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+.contact .container .right form .textarea{
+    height: 80px;
+}
+.contact .container .right form .textarea textarea{
+    padding-top: 10px;
+    resize: none;
+}
+.contact .container .right form .button{
+    height: 47px;
+    width: 170px;
+}
+.contact .container .right form .button button{
+    width: 100%;
+    height: 100%;
+    border: 2px solid crimson;
+    background: crimson;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+.contact .right form .button button:hover{
+    color: crimson;
+    background: none;
+}
+/* end section contact */
+/* start footer */
+footer{
+    background: #fff;
+    padding-top: 20px;
+}
+footer span{
+    font-size: 18px;
+    padding-top: 6px;
+}
+footer span a{
+    color: crimson;
+}
+footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+footer ul li{
+    margin-left: 30px;
+}
+footer ul li a{
+    color: crimson;
+    font-size: 25px;
+}
+/* end footer */
+
+
+
+
+/* make to responsive */
+@media (max-width: 975px) {
+    .navbar-collapse{
+        background: #111;
+        height: 100vh;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        text-align: center;
+        padding-top: 60px;
+        transition: all 0.4s ease;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+    footer span{
+        font-size: 18px;
+    }
+}
+@media (max-width: 768px) {
+    .home{
+        color: #fff;
+        position: relative;
+    }
+    .home .overlay{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background-color: rgb(0, 0, 0, .6);
+        z-index: 2;
+    }
+    .home .container{
+        position: absolute;
+        z-index: 3;
+        top: 30%;
+    }
+    .home .home-content .text-1{
+        font-size: 27px;
+        margin-left: 15px
+    }
+    .home .home-content .text-2{
+        font-size: 62px;
+        font-weight: 500;
+        margin-left: 15px;
+        margin-bottom: 2px;
+    }
+    .home .home-content .text-3{
+        font-size: 27px;
+        margin: 5px 15px;
+    }
+    .home .home-content a{
+        font-size: 22px;
+        padding: 10px 30px;
+        margin-left: 15px;
+    }
+    .skills .container .left a{
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 375px) {
+    .about .about-content img{
+        height: 300px;
+        width: 300px;
+        object-fit: cover;
+        border-radius: 6px;
+    }
+    .about .info h3{
+        font-size: 23px;
+    }
+    footer span{
+        font-size: 15px;
+        padding-bottom: 30px;
+    }
+    footer ul li a{
+        font-size: 20px;
+    }
+}
